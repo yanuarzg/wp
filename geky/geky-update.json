@@ -12,13 +12,13 @@
   "plugin": {
     "name": "Geky Core",
     "slug": "geky-core",
-    "version": "1.1.1",
-    "download_url": "https://github.com/yanuarzg/wp/releases/download/geky-core-v1.1.1/geky-core-v1.1.1.zip",
-    "details_url": "https://github.com/yanuarzg/wp/releases/tag/geky-core-v1.1.1",
+    "version": "1.1.2",
+    "download_url": "https://github.com/yanuarzg/wp/releases/download/geky-core-v1.1.2/geky-core-v1.1.2.zip",
+    "details_url": "https://github.com/yanuarzg/wp/releases/tag/geky-core-v1.1.2",
     "requires": "6.2",
     "requires_php": "8.0",
     "tested": "6.8",
     "description": "Companion plugin untuk Geky Theme.",
-    "changelog": "Perbaikan updater, domain guard, post views, dan compatibility."
+    "changelog": "Perbaikan nomor versi plugin agar update tidak muncul berulang."
   }
 }
