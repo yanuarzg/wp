@@ -1,14 +1,14 @@
 {
   "theme": "newspress",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "requires": "6.0",
   "tested": "6.8",
   "requires_php": "7.4",
   "last_updated": "2026-05-30 00:00:00",
   "details_url": "https://github.com/yanuarzg/wp/tree/main/newspress",
-  "download_url": "https://raw.githubusercontent.com/yanuarzg/wp/main/newspress/newspress-1.5.0.zip",
+  "download_url": "https://raw.githubusercontent.com/yanuarzg/wp/main/newspress/newspress-1.5.1.zip",
   "sections": {
     "description": "NewsPress theme update from YzTheme.",
-    "changelog": "<h3>1.5.0</h3><ul><li>Changed NewsPress update repository to https://github.com/yanuarzg/wp/tree/main/newspress.</li><li>Future update checks now use the new update.json and package URL.</li></ul>"
+    "changelog": "<h3>1.5.1</h3><ul><li>Maintenance update package for testing NewsPress GitHub theme updater.</li><li>Confirms update delivery from the new repository: https://github.com/yanuarzg/wp/tree/main/newspress.</li></ul>"
   }
 }
