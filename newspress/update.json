@@ -1,1 +1,14 @@
-{"theme":"newspress","version":"1.5.8","requires":"6.0","tested":"6.8","requires_php":"7.4","last_updated":"2026-05-30 00:00:00","details_url":"theme-install.php?tab=theme-information&theme=newspress&TB_iframe=true&width=772&height=918","download_url":"https://raw.githubusercontent.com/yanuarzg/wp/main/newspress/newspress-1.5.8.zip","sections":{"description":"NewsPress theme update from YzTheme.","changelog":"<h3>1.5.8</h3><ul><li>Added visible progress overlay for Demo Import to avoid blank loading during large JSON/media import.</li><li>Bundled the provided default-import.json into the theme demo folder.</li></ul>"}}
+{
+  "theme": "newspress",
+  "version": "1.5.9",
+  "requires": "6.0",
+  "tested": "6.8",
+  "requires_php": "7.4",
+  "last_updated": "2026-05-30 00:00:00",
+  "details_url": "theme-install.php?tab=theme-information&theme=newspress&TB_iframe=true&width=772&height=918",
+  "download_url": "https://raw.githubusercontent.com/yanuarzg/wp/main/newspress/newspress-1.5.9.zip",
+  "sections": {
+    "description": "NewsPress theme update from YzTheme.",
+    "changelog": "<h3>1.5.9</h3><ul><li>Added encrypted JSON annual license support.</li><li>Added encrypted JSON lifetime license support with wildcard subdomains.</li><li>Legacy encrypted-domain licenses remain supported.</li><li>License page now shows type, mode, issue date, expiry date, remaining days, and wildcard scope.</li></ul>"
+  }
+}
