@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>NewsPress - Theme WordPress Portal Berita Premium by YzTheme</title>
-  <meta name="description" content="NewsPress adalah theme WordPress premium untuk portal berita dan media online. Lengkap dengan homepage builder, demo import, lisensi annual/lifetime, auto update, dokumentasi, dan support resmi YzTheme.">
+  <title>NewsPress - Theme WordPress Berita Terlengkap untuk Portal Media Online</title>
+  <meta name="description" content="NewsPress adalah theme WordPress berita premium untuk portal media online, blog editorial, dan publisher SEO. Lengkap dengan demo import, homepage builder, breaking news, trending topic, widget berita, lisensi, dan auto update.">
   <meta name="theme-color" content="#0A4DA2">
-  <meta property="og:title" content="NewsPress - Theme WordPress Portal Berita Premium">
-  <meta property="og:description" content="Bangun website berita profesional dengan NewsPress: ringan, SEO friendly, demo import, lisensi domain, auto update, dokumentasi, dan support resmi YzTheme.">
+  <meta property="og:title" content="NewsPress - Theme WordPress Berita Terlengkap">
+  <meta property="og:description" content="Bangun website berita profesional lebih cepat dengan NewsPress: layout portal, demo import, widget editorial, lisensi resmi, dan auto update.">
   <meta property="og:type" content="website">
   <style>
     :root{
@@ -23,7 +23,6 @@
       --np-accent:#e21b2d;
       --np-orange:#f58220;
       --np-green:#16a34a;
-      --np-purple:#7c3aed;
       --np-shadow:0 24px 70px rgba(15,23,42,.12);
       --np-shadow-soft:0 14px 40px rgba(15,23,42,.08);
       --np-radius:22px;
@@ -38,10 +37,10 @@
     img,svg{max-width:100%;display:block}
     button,input,textarea{font:inherit}
     .np-page{position:relative;isolation:isolate;min-height:100vh}
-    .np-page:before{content:"";position:absolute;inset:0 0 auto;height:820px;background:radial-gradient(circle at 12% 12%,rgba(10,77,162,.20),transparent 36%),radial-gradient(circle at 84% 6%,rgba(226,27,45,.14),transparent 32%),linear-gradient(180deg,#fff 0%,#f6f8fc 82%);z-index:-2}
+    .np-page:before{content:"";position:absolute;inset:0 0 auto;height:820px;background:radial-gradient(circle at 12% 12%,rgba(10,77,162,.22),transparent 36%),radial-gradient(circle at 84% 6%,rgba(226,27,45,.18),transparent 32%),linear-gradient(180deg,#fff 0%,#f6f8fc 82%);z-index:-2}
     .np-page:after{content:"";position:absolute;inset:0;z-index:-1;background-image:linear-gradient(rgba(10,77,162,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(10,77,162,.055) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(180deg,#000 0%,transparent 760px);pointer-events:none}
     .container{width:min(calc(100% - 36px),var(--np-container));margin-inline:auto}
-    .nav{position:sticky;top:0;z-index:50;background:rgba(246,248,252,.82);backdrop-filter:blur(18px);border-bottom:1px solid rgba(219,229,242,.8)}
+    .nav{position:sticky;top:0;z-index:50;background:rgba(246,248,252,.78);backdrop-filter:blur(18px);border-bottom:1px solid rgba(219,229,242,.8)}
     .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:74px}
     .brand{display:flex;align-items:center;gap:12px;font-weight:900;color:var(--np-ink);letter-spacing:-.03em}
     .brand-mark{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,var(--np-primary),var(--np-accent));display:grid;place-items:center;box-shadow:0 12px 28px rgba(10,77,162,.24)}
@@ -51,13 +50,12 @@
     .nav-menu a{padding:9px 12px;border-radius:999px}
     .nav-menu a:hover{background:#fff;color:var(--np-primary);box-shadow:0 8px 20px rgba(15,23,42,.06)}
     .nav-cta{display:flex;align-items:center;gap:10px}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:46px;padding:12px 18px;border-radius:999px;border:1px solid transparent;font-weight:900;line-height:1.1;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease,background .18s ease,color .18s ease,border-color .18s ease;text-align:center}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:46px;padding:12px 18px;border-radius:999px;border:1px solid transparent;font-weight:900;line-height:1.1;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease,background .18s ease,color .18s ease,border-color .18s ease}
     .btn:hover{transform:translateY(-2px)}
     .btn-primary{background:linear-gradient(135deg,var(--np-primary),var(--np-primary-2));color:#fff;box-shadow:0 16px 34px rgba(10,77,162,.28)}
     .btn-primary:hover{box-shadow:0 22px 44px rgba(10,77,162,.34)}
     .btn-soft{background:#fff;color:var(--np-primary);border-color:var(--np-border);box-shadow:0 12px 26px rgba(15,23,42,.06)}
     .btn-dark{background:#101827;color:#fff;box-shadow:0 16px 36px rgba(15,23,42,.24)}
-    .btn-line{background:transparent;border-color:rgba(255,255,255,.35);color:#fff}
     .section{padding:86px 0}
     .hero{padding:82px 0 74px}
     .hero-grid{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(360px,.98fr);gap:48px;align-items:center}
@@ -67,8 +65,8 @@
     h1{font-size:clamp(43px,6vw,76px);max-width:900px;margin-top:22px}
     .hero-lead{font-size:clamp(17px,2vw,21px);color:#475569;margin:24px 0 0;max-width:680px;line-height:1.72}
     .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
-    .hero-proof{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:30px;max-width:680px}
-    .proof-card{background:rgba(255,255,255,.78);border:1px solid rgba(219,229,242,.92);border-radius:18px;padding:15px;box-shadow:0 12px 34px rgba(15,23,42,.06)}
+    .hero-proof{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:30px;max-width:630px}
+    .proof-card{background:rgba(255,255,255,.75);border:1px solid rgba(219,229,242,.92);border-radius:18px;padding:15px;box-shadow:0 12px 34px rgba(15,23,42,.06)}
     .proof-card strong{display:block;color:var(--np-ink);font-size:22px;line-height:1;font-weight:950;letter-spacing:-.04em}
     .proof-card span{display:block;color:var(--np-muted);font-size:12px;font-weight:800;margin-top:7px;text-transform:uppercase;letter-spacing:.06em}
     .mockup-wrap{position:relative}
@@ -77,7 +75,8 @@
     .browser-bar{height:48px;display:flex;align-items:center;gap:8px;padding:0 16px;border-bottom:1px solid var(--np-border);background:#f8fafc}
     .dot{width:11px;height:11px;border-radius:50%;background:#cbd5e1}.dot:nth-child(1){background:#ef4444}.dot:nth-child(2){background:#f59e0b}.dot:nth-child(3){background:#22c55e}
     .url{margin-left:10px;flex:1;height:24px;border-radius:999px;background:#eef2f7;color:#64748b;font-size:11px;font-weight:800;display:flex;align-items:center;padding:0 12px}
-    .site-demo{background:#fff}.demo-top{display:flex;align-items:center;justify-content:space-between;padding:18px 20px;border-bottom:1px solid var(--np-border)}
+    .site-demo{background:#fff}
+    .demo-top{display:flex;align-items:center;justify-content:space-between;padding:18px 20px;border-bottom:1px solid var(--np-border)}
     .demo-logo{font-weight:950;font-size:24px;color:var(--np-primary);letter-spacing:-.07em}.demo-logo span{color:var(--np-accent)}
     .demo-nav{display:flex;gap:8px}.demo-nav i{width:42px;height:9px;border-radius:999px;background:#dbe5f2}
     .breaking{display:flex;align-items:center;gap:10px;padding:11px 20px;background:#111827;color:#e5e7eb;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.06em}.breaking b{background:var(--np-accent);color:#fff;border-radius:5px;padding:4px 7px}
@@ -87,22 +86,24 @@
     .badge{display:inline-flex;align-self:flex-start;padding:6px 9px;border-radius:999px;background:rgba(255,255,255,.18);font-size:11px;font-weight:900;margin-bottom:auto;position:relative}.hero-card-demo h3{color:#fff;font-size:28px;position:relative}.hero-card-demo p{margin:10px 0 0;color:#dbeafe;font-size:13px;position:relative}
     .side-list{display:grid;gap:10px}.mini-post{display:grid;grid-template-columns:84px minmax(0,1fr);gap:10px;padding:10px;border:1px solid var(--np-border);border-radius:16px;background:#f8fafc}.thumb{border-radius:12px;background:linear-gradient(135deg,#dbeafe,#fecaca);min-height:70px}.mini-post b{font-size:13px;line-height:1.25;color:#172033}.mini-post span{font-size:11px;color:#64748b;font-weight:800}
     .floating{position:absolute;background:#fff;border:1px solid var(--np-border);border-radius:18px;box-shadow:var(--np-shadow-soft);padding:12px 14px;color:var(--np-ink);font-weight:900}.floating.one{left:-28px;bottom:50px}.floating.two{right:-20px;top:92px}.floating small{display:block;color:var(--np-muted);font-size:11px;font-weight:800}.floating strong{display:block;font-size:18px;line-height:1.1;margin-top:4px}
-    .section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:28px;margin-bottom:34px}.section-kicker{color:var(--np-primary);font-weight:950;text-transform:uppercase;letter-spacing:.12em;font-size:12px;margin-bottom:10px}.section h2{font-size:clamp(32px,4vw,52px);max-width:780px}.section-desc{max-width:560px;color:var(--np-muted);margin:0;font-size:16px}
+    .section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:28px;margin-bottom:34px}.section-kicker{color:var(--np-primary);font-weight:950;text-transform:uppercase;letter-spacing:.12em;font-size:12px;margin-bottom:10px}.section h2{font-size:clamp(32px,4vw,52px);max-width:780px}.section-desc{max-width:520px;color:var(--np-muted);margin:0;font-size:16px}
     .feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.feature{background:var(--np-surface);border:1px solid var(--np-border);border-radius:var(--np-radius);padding:24px;box-shadow:0 12px 32px rgba(15,23,42,.055);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}.feature:hover{transform:translateY(-4px);box-shadow:0 22px 50px rgba(15,23,42,.1);border-color:rgba(10,77,162,.28)}.icon{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(10,77,162,.1),rgba(226,27,45,.08));color:var(--np-primary);margin-bottom:17px}.feature h3{font-size:20px;letter-spacing:-.03em;margin-bottom:10px}.feature p{margin:0;color:var(--np-muted);font-size:14px;line-height:1.65}
     .split{display:grid;grid-template-columns:.95fr 1.05fr;gap:28px;align-items:center}.panel{background:#fff;border:1px solid var(--np-border);border-radius:30px;box-shadow:var(--np-shadow-soft);padding:28px}.check-list{display:grid;gap:13px;margin:24px 0 0;padding:0;list-style:none}.check-list li{display:flex;gap:11px;align-items:flex-start;font-weight:750;color:#334155}.check-list svg{flex:0 0 20px;margin-top:3px;color:var(--np-green)}
     .workflow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;counter-reset:step}.step{background:#fff;border:1px solid var(--np-border);border-radius:var(--np-radius);padding:22px;position:relative;overflow:hidden}.step:before{counter-increment:step;content:"0" counter(step);position:absolute;right:16px;top:10px;font-size:46px;font-weight:950;color:rgba(10,77,162,.08);line-height:1}.step h3{font-size:18px;margin-bottom:9px}.step p{margin:0;color:var(--np-muted);font-size:14px}
     .showcase{background:#0b1220;color:#dbe5f2;position:relative;overflow:hidden}.showcase:before{content:"";position:absolute;inset:auto -20% -45% -20%;height:520px;background:radial-gradient(circle,rgba(10,99,206,.34),transparent 56%)}.showcase h2,.showcase h3{color:#fff}.showcase .section-kicker{color:#93c5fd}.showcase .section-desc{color:#aebbd0}.dark-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.dark-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:26px;padding:24px;backdrop-filter:blur(10px)}.dark-card h3{font-size:22px;margin-bottom:10px}.dark-card p{color:#aebbd0;margin:0}.meta-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.pill{display:inline-flex;align-items:center;border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:7px 10px;font-size:12px;font-weight:850;color:#e2e8f0;background:rgba(255,255,255,.05)}
-    .info-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.info-card{background:#fff;border:1px solid var(--np-border);border-radius:24px;padding:24px;box-shadow:var(--np-shadow-soft)}.info-card h3{font-size:21px;margin-bottom:10px}.info-card p{margin:0;color:var(--np-muted);font-size:14px}.info-card .tag{display:inline-flex;margin-bottom:14px;padding:7px 10px;border-radius:999px;background:var(--np-surface-2);color:var(--np-primary);font-size:12px;font-weight:950}
-    .support-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.scope-box{background:#fff;border:1px solid var(--np-border);border-radius:26px;padding:26px}.scope-box h3{font-size:24px;margin-bottom:14px}.scope-box ul{margin:0;padding:0;list-style:none;display:grid;gap:10px}.scope-box li{display:flex;gap:10px;color:#334155;font-weight:750}.scope-box li:before{font-weight:950}.scope-box.in li:before{content:"✓";color:var(--np-green)}.scope-box.out li:before{content:"—";color:var(--np-orange)}
     .pricing-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.price-card{background:#fff;border:1px solid var(--np-border);border-radius:28px;padding:26px;box-shadow:var(--np-shadow-soft);position:relative}.price-card.popular{border-color:rgba(10,77,162,.3);box-shadow:0 26px 70px rgba(10,77,162,.16);transform:translateY(-8px)}.popular-label{position:absolute;top:18px;right:18px;background:var(--np-accent);color:#fff;font-size:11px;font-weight:950;padding:6px 9px;border-radius:999px}.price-card h3{font-size:24px}.price{margin:14px 0 4px;font-size:38px;color:var(--np-ink);font-weight:950;letter-spacing:-.05em}.price span{font-size:14px;color:var(--np-muted);font-weight:800;letter-spacing:0}.price-card p{color:var(--np-muted);font-size:14px;margin:0 0 18px}.price-card ul{list-style:none;margin:20px 0 24px;padding:0;display:grid;gap:10px}.price-card li{display:flex;gap:9px;font-weight:750;color:#334155}.price-card li:before{content:"✓";color:var(--np-green);font-weight:950}
     .faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px}.faq-list{display:grid;gap:12px}.faq-item{background:#fff;border:1px solid var(--np-border);border-radius:18px;overflow:hidden}.faq-q{width:100%;text-align:left;background:transparent;border:0;padding:18px 20px;display:flex;align-items:center;justify-content:space-between;gap:14px;font-weight:950;color:var(--np-ink);cursor:pointer}.faq-q svg{transition:.18s ease;flex:0 0 18px}.faq-a{display:none;padding:0 20px 18px;color:var(--np-muted);font-size:14px}.faq-item.is-open .faq-a{display:block}.faq-item.is-open .faq-q svg{transform:rotate(180deg)}
-    .cta{padding:90px 0}.cta-box{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--np-primary),#071e41);border-radius:34px;padding:44px;box-shadow:0 34px 90px rgba(10,77,162,.28);color:#e6f0ff}.cta-box:before{content:"";position:absolute;right:-80px;top:-80px;width:320px;height:320px;border-radius:50%;background:rgba(255,255,255,.12)}.cta-box h2{color:#fff;font-size:clamp(32px,4vw,54px);max-width:800px}.cta-box p{font-size:18px;max-width:760px;color:#dbeafe;margin:18px 0 28px}.cta-actions{display:flex;gap:12px;flex-wrap:wrap}.footer{border-top:1px solid var(--np-border);padding:34px 0;color:#64748b}.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center;font-size:14px}.footer-links{display:flex;gap:16px;font-weight:800}.mobile-toggle{display:none;border:0;background:#fff;border-radius:14px;width:44px;height:44px;place-items:center;box-shadow:0 8px 22px rgba(15,23,42,.08)}
-    .notice-line{margin-top:18px;padding:14px 16px;border:1px solid #fed7aa;background:#fff7ed;color:#9a3412;border-radius:16px;font-size:14px;font-weight:750}
+    .cta{padding:90px 0}.cta-box{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--np-primary),#071e41);border-radius:34px;padding:44px;box-shadow:0 34px 90px rgba(10,77,162,.28);color:#e6f0ff}.cta-box:before{content:"";position:absolute;right:-80px;top:-80px;width:320px;height:320px;border-radius:50%;background:rgba(255,255,255,.12)}.cta-box h2{color:#fff;font-size:clamp(32px,4vw,54px);max-width:760px}.cta-box p{font-size:18px;max-width:720px;color:#dbeafe;margin:18px 0 28px}.cta-actions{display:flex;gap:12px;flex-wrap:wrap}.footer{border-top:1px solid var(--np-border);padding:34px 0;color:#64748b}.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center;font-size:14px}.footer-links{display:flex;gap:16px;font-weight:800}.mobile-toggle{display:none;border:0;background:#fff;border-radius:14px;width:44px;height:44px;place-items:center;box-shadow:0 8px 22px rgba(15,23,42,.08)}
     .reveal{opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease}.reveal.is-visible{opacity:1;transform:none}
-    @media (max-width:1024px){.hero-grid,.split,.faq{grid-template-columns:1fr}.mockup-wrap{max-width:680px;margin:auto}.feature-grid,.pricing-grid,.info-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.workflow{grid-template-columns:repeat(2,minmax(0,1fr))}.section-head{display:block}.section-desc{margin-top:14px}.nav-menu{display:none}.mobile-toggle{display:grid}.nav-menu.is-open{position:absolute;left:18px;right:18px;top:74px;display:grid;background:#fff;border:1px solid var(--np-border);border-radius:22px;padding:14px;box-shadow:var(--np-shadow-soft)}.support-grid{grid-template-columns:1fr}}
-    @media (max-width:720px){.container{width:min(calc(100% - 28px),var(--np-container))}.hero{padding:50px 0}.section{padding:58px 0}.hero-proof,.feature-grid,.pricing-grid,.workflow,.dark-grid,.info-grid{grid-template-columns:1fr}.hero-actions,.cta-actions{display:grid}.btn{width:100%}.demo-content{grid-template-columns:1fr}.hero-card-demo h3{font-size:23px}.floating{display:none}.price-card.popular{transform:none}.footer-inner{display:grid;text-align:center;justify-content:center}.footer-links{justify-content:center;flex-wrap:wrap}.nav-cta .btn-soft{display:none}.cta-box{padding:28px;border-radius:26px}.support-grid{grid-template-columns:1fr}}
-    .dn{display:none!important}
+    @media (max-width:1024px){.hero-grid,.split,.faq{grid-template-columns:1fr}.mockup-wrap{max-width:680px;margin:auto}.feature-grid,.pricing-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.workflow{grid-template-columns:repeat(2,minmax(0,1fr))}.section-head{display:block}.section-desc{margin-top:14px}.nav-menu{display:none}.mobile-toggle{display:grid}.nav-menu.is-open{position:absolute;left:18px;right:18px;top:74px;display:grid;background:#fff;border:1px solid var(--np-border);border-radius:22px;padding:14px;box-shadow:var(--np-shadow-soft)}}
+    @media (max-width:720px){.container{width:min(calc(100% - 28px),var(--np-container))}.hero{padding:50px 0}.section{padding:58px 0}.hero-proof,.feature-grid,.pricing-grid,.workflow,.dark-grid{grid-template-columns:1fr}.hero-actions,.cta-actions{display:grid}.btn{width:100%}.demo-content{grid-template-columns:1fr}.hero-card-demo h3{font-size:23px}.floating{display:none}.price-card.popular{transform:none}.footer-inner{display:grid;text-align:center;justify-content:center}.footer-links{justify-content:center;flex-wrap:wrap}.nav-cta .btn-soft{display:none}.cta-box{padding:28px;border-radius:26px}}
+    .dn {display:none!important;}
   </style>
+  
+<style>
+.problem-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.problem-card{background:#fff;border:1px solid var(--np-border);border-radius:var(--np-radius);padding:24px;box-shadow:0 12px 32px rgba(15,23,42,.055)}.problem-card b{display:block;color:var(--np-accent);font-size:13px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}.problem-card h3{font-size:20px;margin-bottom:10px}.problem-card p{margin:0;color:var(--np-muted);font-size:14px}.value-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:28px}.value-item{background:rgba(255,255,255,.8);border:1px solid var(--np-border);border-radius:18px;padding:16px}.value-item strong{display:block;color:var(--np-ink);font-size:18px}.value-item span{display:block;color:var(--np-muted);font-size:13px;margin-top:4px}.audience-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.audience-card{background:#fff;border:1px solid var(--np-border);border-radius:22px;padding:22px;box-shadow:0 12px 32px rgba(15,23,42,.045)}.audience-card h3{font-size:19px;margin-bottom:9px}.audience-card p{margin:0;color:var(--np-muted);font-size:14px}.support-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.support-box{background:#fff;border:1px solid var(--np-border);border-radius:24px;padding:24px}.support-box h3{font-size:22px;margin-bottom:14px}.support-list{list-style:none;margin:0;padding:0;display:grid;gap:10px}.support-list li{display:flex;gap:10px;color:#334155;font-weight:700}.support-list li:before{content:'✓';font-weight:950;color:var(--np-green)}.support-list.no li:before{content:'—';color:var(--np-orange)}.mini-note{font-size:13px;color:var(--np-muted);margin-top:10px}.doc-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.doc-card{background:#fff;border:1px solid var(--np-border);border-radius:24px;padding:24px;box-shadow:0 12px 32px rgba(15,23,42,.045)}.doc-card h3{font-size:20px;margin-bottom:10px}.doc-card p{margin:0;color:var(--np-muted);font-size:14px}.price-badge{display:inline-flex;padding:6px 10px;border-radius:999px;background:var(--np-primary);color:#fff;font-weight:900;font-size:11px;margin-bottom:12px}.hero-lead b{color:var(--np-ink)}@media (max-width:1024px){.problem-grid,.audience-grid,.value-strip,.doc-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.support-grid{grid-template-columns:1fr}}@media (max-width:720px){.problem-grid,.audience-grid,.value-strip,.doc-grid{grid-template-columns:1fr}}
+</style>
+
 </head>
 <body>
 <div class="np-page">
@@ -113,10 +114,10 @@
         <span><small>YzTheme</small>NewsPress</span>
       </a>
       <nav class="nav-menu" id="navMenu" aria-label="Menu utama">
+        <a href="#masalah">Masalah</a>
         <a href="#fitur">Fitur</a>
-        <a href="#demo">Onboarding</a>
+        <a href="#demo">Demo</a>
         <a href="#lisensi">Lisensi</a>
-        <a href="#support">Support</a>
         <a href="#harga">Harga</a>
         <a href="#faq">FAQ</a>
       </nav>
@@ -131,38 +132,60 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <span class="eyebrow"><i></i> Early access theme WordPress berita dari YzTheme</span>
-          <h1>Bangun Website Berita Profesional Tanpa Coding dari Nol.</h1>
-          <p class="hero-lead">NewsPress adalah theme WordPress premium untuk portal berita, media online, blog editorial, dan publisher konten SEO. Pembeli mendapatkan theme, demo import, dokumentasi, lisensi domain, auto update, dan support resmi YzTheme.</p>
+          <span class="eyebrow"><i></i> Theme WordPress Berita Premium</span>
+          <h1>Theme WordPress Berita yang Siap Dipakai, Bukan Sekadar Tampilan.</h1>
+          <p class="hero-lead"><b>NewsPress</b> dibuat untuk pemilik portal berita, media lokal, publisher SEO, dan jasa pembuatan website yang ingin membangun website berita profesional tanpa merakit fitur dari banyak plugin.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="https://newspress.page.gd" target="_blank" rel="noopener">Lihat Demo Live</a>
-            <a class="btn btn-soft" href="#demo">Lihat Alur Instalasi</a>
+            <a class="btn btn-soft" href="#harga">Lihat Paket Lisensi</a>
           </div>
           <div class="hero-proof">
-            <div class="proof-card"><strong>1 Klik</strong><span>Demo Import</span></div>
-            <div class="proof-card"><strong>Annual</strong><span>Lisensi Resmi</span></div>
-            <div class="proof-card"><strong>Auto</strong><span>Update Theme</span></div>
+            <div class="proof-card"><strong>1 Klik</strong><span>Import Demo</span></div>
+            <div class="proof-card"><strong>All-in</strong><span>Fitur Berita</span></div>
+            <div class="proof-card"><strong>Resmi</strong><span>Lisensi & Update</span></div>
           </div>
-          <div class="notice-line">NewsPress diposisikan sebagai produk aktif YzTheme: fitur terus diperbaiki, changelog tersedia, dan pembeli mendapatkan panduan instalasi agar tidak bingung setelah checkout.</div>
+          <div class="value-strip">
+            <div class="value-item"><strong>Tanpa Elementor</strong><span>Homepage builder ringan bawaan theme.</span></div>
+            <div class="value-item"><strong>Siap Adsense</strong><span>Layout mendukung slot iklan dan sidebar.</span></div>
+            <div class="value-item"><strong>SEO Friendly</strong><span>Struktur editorial rapi untuk artikel.</span></div>
+            <div class="value-item"><strong>Support YzTheme</strong><span>Bantuan aktivasi, instalasi, dan update.</span></div>
+          </div>
         </div>
         <div class="mockup-wrap" aria-hidden="true">
           <div class="browser">
             <div class="browser-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">newspress.page.gd</span></div>
             <div class="site-demo">
               <div class="demo-top"><div class="demo-logo">News<span>Press</span></div><div class="demo-nav"><i></i><i></i><i></i></div></div>
-              <div class="breaking"><b>Breaking</b><span>Website berita siap publish dengan layout profesional</span></div>
+              <div class="breaking"><b>Breaking</b><span>Portal berita siap publish dengan layout profesional</span></div>
               <div class="demo-content">
-                <div class="hero-card-demo"><span class="badge">Headline</span><h3>Portal berita modern dengan fitur editorial lengkap</h3><p>Breaking news, trending topic, view counter, share counter, TOC otomatis, dan widget editorial.</p></div>
+                <div class="hero-card-demo"><span class="badge">Headline</span><h3>Bangun media online dengan tampilan rapi sejak hari pertama</h3><p>Breaking news, trending topic, view counter, share counter, TOC, widget editorial, dan demo import.</p></div>
                 <div class="side-list">
-                  <div class="mini-post"><span class="thumb"></span><div><b>Demo import membuat website terlihat hidup</b><span>2 hours ago</span></div></div>
-                  <div class="mini-post"><span class="thumb"></span><div><b>Customizer lengkap untuk brand media online</b><span>4 hours ago</span></div></div>
-                  <div class="mini-post"><span class="thumb"></span><div><b>Auto update theme dari dashboard WordPress</b><span>Today</span></div></div>
+                  <div class="mini-post"><span class="thumb"></span><div><b>Homepage berita bisa diatur tanpa page builder berat</b><span>Hari ini</span></div></div>
+                  <div class="mini-post"><span class="thumb"></span><div><b>Widget editorial siap untuk sidebar dan homepage</b><span>2 jam lalu</span></div></div>
+                  <div class="mini-post"><span class="thumb"></span><div><b>Lisensi aktif membuka update dan fitur premium</b><span>Update rutin</span></div></div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="floating one"><small>License Status</small><strong>Active</strong></div>
-          <div class="floating two"><small>Demo Import</small><strong>Ready</strong></div>
+          <div class="floating one"><small>Demo Import</small><strong>Siap Pakai</strong></div>
+          <div class="floating two"><small>Lisensi</small><strong>Annual/Lifetime</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="masalah">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><div class="section-kicker">Masalah Calon Pembeli</div><h2>Kenapa banyak website berita terlihat “setengah jadi”?</h2></div>
+          <p class="section-desc">Banyak theme hanya bagus di screenshot, tapi ketika dipakai untuk portal berita sungguhan, pemilik website masih harus mencari plugin tambahan, mengatur layout dari nol, dan bingung membuat tampilan homepage yang hidup.</p>
+        </div>
+        <div class="problem-grid">
+          <article class="problem-card reveal"><b>Masalah 01</b><h3>Homepage sulit dibuat seperti portal berita</h3><p>Theme blog biasa biasanya hanya menampilkan daftar artikel. Untuk media online, kamu butuh headline, grid kategori, breaking news, dan sidebar editorial.</p></article>
+          <article class="problem-card reveal"><b>Masalah 02</b><h3>Terlalu bergantung pada banyak plugin</h3><p>TOC, view counter, share button, related post, widget berita, dan layout kategori sering harus dipasang terpisah sehingga website makin berat.</p></article>
+          <article class="problem-card reveal"><b>Masalah 03</b><h3>Demo tidak mudah ditiru</h3><p>Calon pembeli tertarik karena demo, tetapi setelah install theme tampil kosong dan sulit dibuat sama seperti contoh.</p></article>
+          <article class="problem-card reveal"><b>Masalah 04</b><h3>Tidak ada alur lisensi dan update</h3><p>Untuk produk premium, pembeli butuh akses resmi, license key, dokumentasi, dan update theme yang jelas dari dashboard WordPress.</p></article>
+          <article class="problem-card reveal"><b>Masalah 05</b><h3>Layout iklan dan monetisasi kurang siap</h3><p>Media online butuh area banner, sidebar, mobile sticky ad, dan struktur konten yang mendukung monetisasi.</p></article>
+          <article class="problem-card reveal"><b>Solusi</b><h3>NewsPress dirancang khusus untuk website berita</h3><p>Bukan theme serbaguna. NewsPress fokus pada kebutuhan portal berita, media lokal, blog editorial, dan publisher konten.</p></article>
         </div>
       </div>
     </section>
@@ -170,19 +193,34 @@
     <section class="section" id="fitur">
       <div class="container">
         <div class="section-head reveal">
-          <div><div class="section-kicker">Fitur Unggulan</div><h2>Satu theme untuk kebutuhan portal berita modern.</h2></div>
-          <p class="section-desc">NewsPress membawa fitur editorial yang biasanya butuh banyak plugin menjadi satu paket theme yang rapi, ringan, dan mudah diatur dari dashboard WordPress.</p>
+          <div><div class="section-kicker">Fitur Utama</div><h2>Fitur yang paling dibutuhkan website berita sudah tersedia.</h2></div>
+          <p class="section-desc">NewsPress menyatukan fitur layout, editorial, iklan, lisensi, dan update dalam satu theme yang mudah dioperasikan.</p>
         </div>
         <div class="feature-grid">
-          <article class="feature reveal"><div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 5h16v14H4zM4 10h16M10 10v9" stroke="currentColor" stroke-width="2"/></svg></div><h3>Homepage Builder</h3><p>Atur hero, slider, grid, row kategori, latest post, dan widget area tanpa page builder berat.</p></article>
-          <article class="feature reveal"><div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 12h4l2-6 4 12 2-6h4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Breaking News</h3><p>Ticker berita terbaru berdasarkan recent post, kategori, atau tag breaking-news dengan label custom.</p></article>
-          <article class="feature reveal"><div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 3l2.8 5.7 6.2.9-4.5 4.4 1.1 6.1L12 17.2 6.4 20.1 7.5 14 3 9.6l6.2-.9z" stroke="currentColor" stroke-width="2"/></svg></div><h3>Trending Topic</h3><p>Tampilkan trending berdasarkan tags atau categories, dengan rentang hari ini, 7 hari, 30 hari, atau all time.</p></article>
-          <article class="feature reveal"><div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div><h3>TOC Otomatis</h3><p>Daftar isi otomatis dari heading H2-H6 dengan marker bertingkat, toggle, dan tampilan mobile friendly.</p></article>
-          <article class="feature reveal"><div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 12s3-6 8-6 8 6 8 6-3 6-8 6-8-6-8-6z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/></svg></div><h3>View Counter</h3><p>Sistem view counter bawaan dengan rate limit untuk artikel, widget popular, dan statistik post.</p></article>
-          <article class="feature reveal"><div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M8 12h8M12 8v8M5 5h14v14H5z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div><h3>Share Counter</h3><p>Hitung klik share artikel dan tampilkan format seperti 125 Share di area share single post.</p></article>
-          <article class="feature reveal"><div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M21 12.8A8 8 0 1 1 11.2 3 6.5 6.5 0 0 0 21 12.8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div><h3>Dark Mode</h3><p>Mode gelap dengan pengaturan background, primary, accent, dan text color langsung dari Customizer.</p></article>
-          <article class="feature reveal"><div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 3v12M7 10l5 5 5-5M5 21h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Demo Import</h3><p>Import posts, kategori, menu, widgets, Customizer, homepage settings, dan featured image dari default-import.json.</p></article>
-          <article class="feature reveal"><div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 3l8 4v6c0 5-3.4 7.6-8 8-4.6-.4-8-3-8-8V7z" stroke="currentColor" stroke-width="2"/><path d="M9 12l2 2 4-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>License & Auto Update</h3><p>Lisensi annual/lifetime, aktivasi domain, grace period, kunci fitur premium, dan auto update theme.</p></article>
+          <article class="feature reveal"><div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 5h16v14H4zM4 10h16M10 10v9" stroke="currentColor" stroke-width="2"/></svg></div><h3>Homepage Builder Berita</h3><p>Atur hero, slider, grid, list kategori, latest post, dan widget area tanpa page builder berat.</p></article>
+          <article class="feature reveal"><div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 12h4l2-6 4 12 2-6h4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Breaking News</h3><p>Ticker berita terbaru dari recent post, kategori, atau tag tertentu dengan label yang bisa disesuaikan.</p></article>
+          <article class="feature reveal"><div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 3l2.8 5.7 6.2.9-4.5 4.4 1.1 6.1L12 17.2 6.4 20.1 7.5 14 3 9.6l6.2-.9z" stroke="currentColor" stroke-width="2"/></svg></div><h3>Trending Topic</h3><p>Tampilkan topik populer berdasarkan tag atau kategori, dengan opsi hari ini, 7 hari, 30 hari, atau all time.</p></article>
+          <article class="feature reveal"><div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div><h3>TOC Otomatis</h3><p>Daftar isi otomatis dari heading H2-H6 dengan marker bertingkat dan tampilan mobile friendly.</p></article>
+          <article class="feature reveal"><div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 12s3-6 8-6 8 6 8 6-3 6-8 6-8-6-8-6z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/></svg></div><h3>View Counter</h3><p>Counter views bawaan dengan rate limit, cocok untuk post meta dan widget artikel populer.</p></article>
+          <article class="feature reveal"><div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M8 12h8M12 8v8M5 5h14v14H5z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div><h3>Share Click Counter</h3><p>Hitung jumlah klik share dan tampilkan angka seperti 125 Share pada artikel.</p></article>
+          <article class="feature reveal"><div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M21 12.8A8 8 0 1 1 11.2 3 6.5 6.5 0 0 0 21 12.8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div><h3>Dark Mode & Customizer</h3><p>Atur warna brand, layout, tanggal, meta post, footer, dan tampilan gelap langsung dari Customizer.</p></article>
+          <article class="feature reveal"><div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 3v12M7 10l5 5 5-5M5 21h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>One Click Demo Import</h3><p>Import demo posts, kategori, menu, widgets, Customizer, homepage settings, dan media agar website cepat siap.</p></article>
+          <article class="feature reveal"><div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 3l8 4v6c0 5-3.4 7.6-8 8-4.6-.4-8-3-8-8V7z" stroke="currentColor" stroke-width="2"/><path d="M9 12l2 2 4-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Lisensi & Auto Update</h3><p>License key resmi, annual/lifetime mode, lifetime wildcard subdomain, dan update langsung dari dashboard WordPress.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="cocok">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><div class="section-kicker">Untuk Siapa?</div><h2>NewsPress cocok untuk proyek berita yang butuh hasil cepat dan profesional.</h2></div>
+          <p class="section-desc">Baik untuk pemilik media, blogger berita, publisher Adsense, maupun developer yang membuat website untuk klien.</p>
+        </div>
+        <div class="audience-grid">
+          <div class="audience-card reveal"><h3>Media Lokal</h3><p>Bangun portal berita daerah, komunitas, pemerintahan, kampus, atau organisasi.</p></div>
+          <div class="audience-card reveal"><h3>Publisher SEO</h3><p>Cocok untuk website niche berita, konten evergreen, dan monetisasi iklan.</p></div>
+          <div class="audience-card reveal"><h3>Jasa Website</h3><p>Mempercepat produksi website berita untuk klien tanpa membuat layout dari nol.</p></div>
+          <div class="audience-card reveal"><h3>Brand Newsroom</h3><p>Buat halaman editorial resmi untuk update, artikel, dan publikasi brand.</p></div>
         </div>
       </div>
     </section>
@@ -190,39 +228,22 @@
     <section class="section" id="demo">
       <div class="container split">
         <div class="reveal">
-          <div class="section-kicker">Onboarding Pembeli</div>
-          <h2>Setelah membeli, pembeli tidak dibiarkan bingung.</h2>
-          <p class="section-desc" style="margin-top:18px">Alur penggunaan NewsPress dibuat jelas dari member area sampai website siap publish. Ini membantu mengurangi pertanyaan support berulang.</p>
+          <div class="section-kicker">Mulai Lebih Cepat</div>
+          <h2>Dari install theme sampai website terlihat hidup.</h2>
+          <p class="section-desc" style="margin-top:18px">NewsPress menyediakan alur awal yang jelas untuk pembeli: install, aktivasi license, import demo, lalu sesuaikan brand dan konten. Cocok untuk pengguna yang ingin langsung mulai tanpa bingung dari halaman kosong.</p>
           <ul class="check-list">
-            <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Login member area, download theme, dan copy license key.</li>
-            <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Install theme, aktifkan lisensi, lalu jalankan demo import.</li>
-            <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Atur logo, warna, menu, widget, homepage, dan mulai publish artikel.</li>
+            <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Demo import tidak menghapus konten lama secara paksa.</li>
+            <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Backup setup otomatis sebelum import agar lebih aman.</li>
+            <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Widget, homepage, menu, kategori, artikel demo, dan media bisa ikut masuk.</li>
           </ul>
         </div>
         <div class="panel reveal">
           <div class="workflow" style="grid-template-columns:1fr 1fr">
-            <div class="step"><h3>Download</h3><p>Ambil ZIP theme resmi dari member area YzTheme.</p></div>
-            <div class="step"><h3>Activate</h3><p>Copy license domain dan aktifkan dari NewsPress License.</p></div>
-            <div class="step"><h3>Import</h3><p>Gunakan default demo untuk membuat struktur awal website.</p></div>
-            <div class="step"><h3>Publish</h3><p>Ganti branding, rapikan widget, lalu publish artikel pertama.</p></div>
+            <div class="step"><h3>Install</h3><p>Upload ZIP theme ke WordPress dan aktifkan NewsPress.</p></div>
+            <div class="step"><h3>Aktivasi</h3><p>Copy license key dari member area sesuai domain website.</p></div>
+            <div class="step"><h3>Import</h3><p>Jalankan demo import agar layout awal langsung terbentuk.</p></div>
+            <div class="step"><h3>Publish</h3><p>Ganti logo, warna, menu, widget, lalu mulai publish artikel.</p></div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="buyer-ready">
-      <div class="container">
-        <div class="section-head reveal">
-          <div><div class="section-kicker">Yang Didapat Pembeli</div><h2>Bukan hanya ZIP theme, tetapi paket siap pakai.</h2></div>
-          <p class="section-desc">NewsPress disiapkan sebagai produk digital yang rapi: ada dokumentasi, update, changelog, dan batasan support yang jelas.</p>
-        </div>
-        <div class="info-grid">
-          <div class="info-card reveal"><span class="tag">Dokumentasi</span><h3>Panduan instalasi dari nol</h3><p>Berisi cara install theme, aktivasi lisensi, import demo, setup logo/menu/widget, dan update theme dari dashboard.</p></div>
-          <div class="info-card reveal"><span class="tag">README</span><h3>README pembeli di dalam ZIP</h3><p>File panduan singkat untuk pembeli yang membuka paket ZIP: link member area, lisensi, docs, support, dan langkah instalasi.</p></div>
-          <div class="info-card reveal"><span class="tag">Changelog</span><h3>Riwayat update publik</h3><p>Setiap rilis ditulis jelas agar pembeli tahu fitur baru, perbaikan bug, dan alasan update theme.</p></div>
-          <div class="info-card reveal"><span class="tag">Safe Import</span><h3>Demo import lebih aman</h3><p>Import demo tidak menghapus konten lama. Backup setup tersimpan otomatis sebelum import sehingga lebih aman untuk dicoba.</p></div>
-          <div class="info-card reveal"><span class="tag">Member Area</span><h3>Kelola domain lisensi</h3><p>Pembeli bisa melihat produk, limit lisensi, domain terpakai, masa aktif annual, dan copy license key dari member area.</p></div>
-          <div class="info-card reveal"><span class="tag">Support</span><h3>Bantuan resmi YzTheme</h3><p>Support tersedia untuk instalasi, aktivasi lisensi, demo import, update theme, dan bug terkait fitur NewsPress.</p></div>
         </div>
       </div>
     </section>
@@ -230,14 +251,14 @@
     <section class="section showcase" id="lisensi">
       <div class="container">
         <div class="section-head reveal">
-          <div><div class="section-kicker">Lisensi Resmi</div><h2>Annual, lifetime, dan auto update dalam satu ekosistem YzTheme.</h2></div>
-          <p class="section-desc">Lisensi dibuat berbasis produk dan domain. Produk lama tetap aman, sedangkan produk baru bisa memakai lisensi annual atau lifetime sesuai paket.</p>
+          <div><div class="section-kicker">Lisensi Resmi</div><h2>Akses produk lebih rapi untuk pembeli dan pengguna aktif.</h2></div>
+          <p class="section-desc">NewsPress memakai sistem lisensi resmi YzTheme agar pembeli mendapatkan akses theme, demo, update, dan support sesuai paket yang dipilih.</p>
         </div>
         <div class="dark-grid">
-          <div class="dark-card reveal"><h3>Annual License</h3><p>Lisensi aktif selama masa pembelian. Tanggal mulai dan expired tersimpan di database member, sehingga klik Copy berkali-kali tidak memperpanjang masa aktif.</p><div class="meta-row"><span class="pill">1 tahun</span><span class="pill">Expired badge</span><span class="pill">Renewal ready</span></div></div>
-          <div class="dark-card reveal"><h3>Lifetime License</h3><p>Lisensi lifetime dapat mendukung wildcard subdomain khusus paket tertentu, misalnya domain utama dan semua subdomain di bawahnya.</p><div class="meta-row"><span class="pill">Lifetime</span><span class="pill">Wildcard subdomain</span><span class="pill">Priority value</span></div></div>
-          <div class="dark-card reveal"><h3>Auto Update</h3><p>Update theme muncul di dashboard WordPress melalui update.json dan package resmi. Update hanya aktif jika lisensi valid.</p><div class="meta-row"><span class="pill">GitHub updater</span><span class="pill">Manifest cache</span><span class="pill">Version detail</span></div></div>
-          <div class="dark-card reveal"><h3>Grace & Premium Lock</h3><p>Jika lisensi belum aktif atau sudah expired, fitur premium dapat dikunci dan admin notice membantu user memahami langkah perbaikan.</p><div class="meta-row"><span class="pill">Grace period</span><span class="pill">License status</span><span class="pill">WA support</span></div></div>
+          <div class="dark-card reveal"><h3>Annual License</h3><p>Lisensi tahunan cocok untuk pembeli yang ingin akses update dan support dalam periode aktif. Masa aktif ditampilkan di member area.</p><div class="meta-row"><span class="pill">1 Tahun</span><span class="pill">Domain License</span><span class="pill">Update Aktif</span></div></div>
+          <div class="dark-card reveal"><h3>Lifetime License</h3><p>Paket lifetime mendukung wildcard subdomain, cocok untuk pemilik banyak subdomain dalam satu root domain.</p><div class="meta-row"><span class="pill">Lifetime</span><span class="pill">Wildcard Subdomain</span><span class="pill">Premium Access</span></div></div>
+          <div class="dark-card reveal"><h3>Auto Update</h3><p>Jika lisensi aktif, update theme muncul di dashboard WordPress seperti update theme pada umumnya.</p><div class="meta-row"><span class="pill">Dashboard Update</span><span class="pill">Changelog</span><span class="pill">Package ZIP</span></div></div>
+          <div class="dark-card reveal"><h3>Grace & Protection</h3><p>Fitur premium dikunci jika lisensi tidak aktif, namun tetap ada grace period agar pengguna tidak langsung terganggu.</p><div class="meta-row"><span class="pill">Grace Period</span><span class="pill">Premium Lock</span><span class="pill">WA Support</span></div></div>
         </div>
       </div>
     </section>
@@ -245,61 +266,55 @@
     <section class="section" id="support">
       <div class="container">
         <div class="section-head reveal">
-          <div><div class="section-kicker">Support Jelas</div><h2>Support resmi dengan batasan yang transparan.</h2></div>
-          <p class="section-desc">Batasan ini penting agar pembeli memahami mana bantuan yang termasuk paket theme dan mana yang termasuk layanan custom tambahan.</p>
+          <div><div class="section-kicker">Support yang Jelas</div><h2>Pembeli tahu apa yang didapat, kamu juga tidak kewalahan support.</h2></div>
+          <p class="section-desc">NewsPress cocok dijual dengan batasan support yang transparan agar ekspektasi pembeli jelas sejak awal.</p>
         </div>
         <div class="support-grid">
-          <div class="scope-box in reveal">
-            <h3>Termasuk Support</h3>
-            <ul>
-              <li>Bantuan instalasi theme NewsPress.</li>
-              <li>Aktivasi lisensi dan kendala member area.</li>
-              <li>Import demo dan setup awal dasar.</li>
-              <li>Bug theme dan fitur bawaan NewsPress.</li>
-              <li>Panduan update theme dari dashboard WordPress.</li>
-            </ul>
-          </div>
-          <div class="scope-box out reveal">
-            <h3>Tidak Termasuk Support Gratis</h3>
-            <ul>
-              <li>Custom desain besar di luar fitur bawaan.</li>
-              <li>Perbaikan plugin pihak ketiga.</li>
-              <li>Migrasi website penuh atau cleanup hosting.</li>
-              <li>Optimasi artikel, SEO campaign, dan rewrite konten.</li>
-              <li>Jasa setup premium khusus client project.</li>
-            </ul>
-          </div>
+          <div class="support-box reveal"><h3>Termasuk Support</h3><ul class="support-list"><li>Bantuan install theme</li><li>Aktivasi license key</li><li>Import demo awal</li><li>Bug bawaan theme</li><li>Panduan update theme</li></ul></div>
+          <div class="support-box reveal"><h3>Tidak Termasuk Support Gratis</h3><ul class="support-list no"><li>Custom desain besar di luar fitur theme</li><li>Perbaikan plugin pihak ketiga</li><li>Optimasi artikel dan strategi SEO lanjutan</li><li>Migrasi website penuh</li><li>Custom fitur khusus sesuai permintaan</li></ul><p class="mini-note">Kebutuhan di luar support standar bisa dikerjakan sebagai layanan tambahan.</p></div>
         </div>
-        <div class="notice-line reveal">Butuh bantuan lebih jauh? YzTheme dapat menawarkan layanan tambahan seperti setup NewsPress, custom homepage, maintenance, atau publikasi artikel sebagai upsell terpisah.</div>
       </div>
     </section>
 
     <section class="section" id="harga">
       <div class="container">
         <div class="section-head reveal">
-          <div><div class="section-kicker">Paket Lisensi</div><h2>Pilih paket sesuai kebutuhan website berita Anda.</h2></div>
-          <p class="section-desc">Struktur paket ini dibuat agar jelas untuk pembeli baru, media kecil, agency, dan developer yang membutuhkan lisensi lebih luas.</p>
+          <div><div class="section-kicker">Paket Lisensi</div><h2>Pilih paket sesuai jumlah website dan kebutuhan update.</h2></div>
+          <p class="section-desc">Gunakan paket annual untuk biaya awal lebih ringan, atau lifetime untuk kebutuhan jangka panjang dan subdomain.</p>
         </div>
         <div class="pricing-grid">
-          <div class="price-card reveal"><h3>Personal Annual</h3><div class="price">Rp 149rb <span>/ 1 domain</span></div><p>Untuk blog berita pribadi, niche site, atau publisher kecil.</p><ul><li>License 1 domain</li><li>Update 1 tahun</li><li>Demo import</li><li>Dokumentasi instalasi</li><li>Support dasar</li></ul><a class="btn btn-soft" href="https://www.yztheme.my.id/p/member-area.html" target="_blank" rel="noopener">Pilih Personal</a></div>
-          <div class="price-card popular reveal"><span class="popular-label">Populer</span><h3>Business Annual</h3><div class="price">Rp 299rb <span>/ 3 domain</span></div><p>Untuk media lokal, jasa website berita, atau publisher multi project.</p><ul><li>License 3 domain</li><li>Update 1 tahun</li><li>Semua fitur NewsPress</li><li>Auto update dashboard</li><li>Priority support</li></ul><a class="btn btn-primary" href="https://www.yztheme.my.id/p/member-area.html" target="_blank" rel="noopener">Pilih Business</a></div>
-          <div class="price-card reveal"><h3>Lifetime</h3><div class="price">Rp 699rb <span>/ paket</span></div><p>Untuk developer, agency, atau pemilik brand yang ingin akses lebih panjang.</p><ul><li>Lifetime license</li><li>Wildcard subdomain khusus lifetime</li><li>Update jangka panjang</li><li>Hak pakai client project sesuai paket</li><li>Support prioritas</li></ul><a class="btn btn-dark" href="https://www.yztheme.my.id/p/member-area.html" target="_blank" rel="noopener">Pilih Lifetime</a></div>
+          <div class="price-card reveal"><span class="price-badge">Annual</span><h3>Personal</h3><div class="price">Rp149rb <span>/ tahun</span></div><p>Untuk satu website berita, blog editorial, atau project pribadi.</p><ul><li>Lisensi 1 domain</li><li>Demo import</li><li>Update theme selama aktif</li><li>Support instalasi dasar</li></ul><a class="btn btn-soft" href="https://www.yztheme.my.id/p/member-area.html" target="_blank" rel="noopener">Pilih Personal</a></div>
+          <div class="price-card popular reveal"><span class="popular-label">Populer</span><span class="price-badge">Annual</span><h3>Business</h3><div class="price">Rp299rb <span>/ tahun</span></div><p>Untuk media lokal, publisher, atau beberapa project website berita.</p><ul><li>Lisensi hingga 3 domain</li><li>Semua fitur NewsPress</li><li>Auto update</li><li>Priority support</li></ul><a class="btn btn-primary" href="https://www.yztheme.my.id/p/member-area.html" target="_blank" rel="noopener">Pilih Business</a></div>
+          <div class="price-card reveal"><span class="price-badge">Lifetime</span><h3>Lifetime</h3><div class="price">Rp699rb <span>/ root domain</span></div><p>Untuk penggunaan jangka panjang dengan dukungan wildcard subdomain.</p><ul><li>Lifetime license</li><li>Wildcard subdomain</li><li>Update theme</li><li>Support prioritas</li></ul><a class="btn btn-dark" href="https://www.yztheme.my.id/p/member-area.html" target="_blank" rel="noopener">Pilih Lifetime</a></div>
         </div>
-        <div class="notice-line reveal">Harga dapat berubah sesuai promo dan paket resmi YzTheme. Pastikan membeli melalui kanal resmi agar lisensi, update, dan support berjalan.</div>
+      </div>
+    </section>
+
+    <section class="section" id="dokumen">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><div class="section-kicker">Bukan Beli Lalu Bingung</div><h2>Pembeli diarahkan dengan alur penggunaan yang jelas.</h2></div>
+          <p class="section-desc">Landing page, member area, dokumentasi, dan support dibuat agar pembeli tidak tersesat setelah checkout.</p>
+        </div>
+        <div class="doc-grid">
+          <div class="doc-card reveal"><h3>Panduan Install</h3><p>Langkah dari download theme, upload ZIP, aktifkan theme, sampai memasukkan license key.</p></div>
+          <div class="doc-card reveal"><h3>Panduan Demo Import</h3><p>Penjelasan apa saja yang diimport, kapan perlu restore, dan tips untuk hosting kecil.</p></div>
+          <div class="doc-card reveal"><h3>Changelog Update</h3><p>Setiap update NewsPress memiliki catatan perubahan agar pembeli tahu produk aktif dikembangkan.</p></div>
+        </div>
       </div>
     </section>
 
     <section class="section" id="faq">
       <div class="container faq">
-        <div class="reveal"><div class="section-kicker">FAQ</div><h2>Pertanyaan umum sebelum membeli NewsPress.</h2><p class="section-desc" style="margin-top:16px">Bagian ini dirancang untuk mengurangi kebingungan pembeli sebelum dan sesudah checkout.</p></div>
+        <div class="reveal"><div class="section-kicker">FAQ</div><h2>Pertanyaan umum sebelum membeli NewsPress.</h2><p class="section-desc" style="margin-top:16px">Jawaban singkat untuk membantu calon pembeli menentukan apakah NewsPress sesuai kebutuhan mereka.</p></div>
         <div class="faq-list reveal">
-          <div class="faq-item is-open"><button class="faq-q">Apakah NewsPress butuh Elementor?<svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M5 7.5 10 12.5l5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button><div class="faq-a">Tidak. NewsPress sudah punya homepage builder dan widget editorial bawaan, sehingga tidak wajib memakai page builder berat.</div></div>
-          <div class="faq-item"><button class="faq-q">Bagaimana cara mendapatkan license key?<svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M5 7.5 10 12.5l5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button><div class="faq-a">Setelah pembelian, login ke member area YzTheme, tambahkan domain sesuai limit lisensi, lalu klik Copy pada domain yang ingin diaktifkan.</div></div>
-          <div class="faq-item"><button class="faq-q">Apakah klik Copy berkali-kali memperpanjang lisensi annual?<svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M5 7.5 10 12.5l5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button><div class="faq-a">Tidak. License key bisa terlihat berbeda karena proses enkripsi, tetapi masa aktif annual tetap mengikuti tanggal expired yang tersimpan di member area.</div></div>
-          <div class="faq-item"><button class="faq-q">Apakah lifetime support wildcard subdomain?<svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M5 7.5 10 12.5l5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button><div class="faq-a">Ya, paket lifetime dapat mendukung wildcard subdomain sesuai ketentuan paket. Contoh: namadomain.com, www.namadomain.com, berita.namadomain.com, dan toko.namadomain.com.</div></div>
-          <div class="faq-item"><button class="faq-q">Apakah demo import menghapus konten lama?<svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M5 7.5 10 12.5l5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button><div class="faq-a">Demo import dibuat untuk menambahkan dan mengatur setup NewsPress. Sebelum import, setup dapat dibackup agar lebih aman jika perlu restore.</div></div>
-          <div class="faq-item"><button class="faq-q">Apa saja yang termasuk support?<svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M5 7.5 10 12.5l5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button><div class="faq-a">Support mencakup instalasi, aktivasi lisensi, demo import, update theme, dan bug fitur bawaan NewsPress. Custom desain besar, migrasi penuh, dan plugin pihak ketiga termasuk layanan tambahan.</div></div>
-          <div class="faq-item"><button class="faq-q">Apakah update otomatis tersedia?<svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M5 7.5 10 12.5l5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button><div class="faq-a">Ya. NewsPress mendukung auto update dari dashboard WordPress melalui manifest update.json, selama lisensi aktif dan valid.</div></div>
+          <div class="faq-item is-open"><button class="faq-q">Apakah NewsPress butuh Elementor?<svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M5 7.5 10 12.5l5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button><div class="faq-a">Tidak. NewsPress punya homepage builder dan widget editorial bawaan sehingga website berita bisa dibuat tanpa page builder berat.</div></div>
+          <div class="faq-item"><button class="faq-q">Apakah demo import menghapus konten lama?<svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M5 7.5 10 12.5l5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button><div class="faq-a">Demo import dirancang untuk menambahkan atau memperbarui setup demo. Backup setup juga disiapkan agar lebih aman sebelum import.</div></div>
+          <div class="faq-item"><button class="faq-q">Apa beda annual dan lifetime?<svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M5 7.5 10 12.5l5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button><div class="faq-a">Annual aktif dalam masa langganan tahunan. Lifetime berlaku jangka panjang dan mendukung wildcard subdomain untuk root domain yang sama.</div></div>
+          <div class="faq-item"><button class="faq-q">Apakah bisa dipakai di subdomain?<svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M5 7.5 10 12.5l5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button><div class="faq-a">Paket lifetime mendukung wildcard subdomain, misalnya berita.domain.com dan toko.domain.com dalam root domain yang sama.</div></div>
+          <div class="faq-item"><button class="faq-q">Apakah cocok untuk Adsense?<svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M5 7.5 10 12.5l5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button><div class="faq-a">Ya. Layout portal berita, sidebar, widget area, dan ruang banner membantu kebutuhan monetisasi iklan.</div></div>
+          <div class="faq-item"><button class="faq-q">Bagaimana cara update theme?<svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M5 7.5 10 12.5l5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button><div class="faq-a">Jika lisensi aktif, update akan muncul di dashboard WordPress. Pembeli juga dapat mengunduh file terbaru dari member area.</div></div>
+          <div class="faq-item"><button class="faq-q">Apakah saya bisa minta custom desain?<svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M5 7.5 10 12.5l5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button><div class="faq-a">Custom desain besar tidak termasuk support gratis, tetapi bisa dikerjakan sebagai layanan tambahan sesuai kebutuhan.</div></div>
         </div>
       </div>
     </section>
@@ -307,11 +322,11 @@
     <section class="cta">
       <div class="container">
         <div class="cta-box reveal">
-          <h2>Siap membangun portal berita profesional dengan NewsPress?</h2>
-          <p>Install theme, aktifkan lisensi, import demo, dan mulai publish artikel. NewsPress memberi pondasi lengkap untuk website berita yang rapi, modern, mudah dikelola, dan siap dikembangkan.</p>
+          <h2>Butuh theme WordPress berita yang lengkap dan siap jual?</h2>
+          <p>NewsPress membantu kamu membuat website berita yang terlihat profesional, mudah dikelola, dan siap dikembangkan untuk konten, iklan, serta project klien.</p>
           <div class="cta-actions">
-            <a class="btn btn-primary" style="background:#fff;color:var(--np-primary);box-shadow:none" href="https://www.yztheme.my.id/p/member-area.html" target="_blank" rel="noopener">Masuk Member Area</a>
-            <a class="btn btn-line" href="https://newspress.page.gd" target="_blank" rel="noopener">Lihat Demo Live</a>
+            <a class="btn btn-primary" style="background:#fff;color:var(--np-primary);box-shadow:none" href="https://newspress.page.gd" target="_blank" rel="noopener">Lihat Demo Live</a>
+            <a class="btn btn-soft" href="https://www.yztheme.my.id/p/member-area.html" target="_blank" rel="noopener">Masuk Member Area</a>
           </div>
         </div>
       </div>
