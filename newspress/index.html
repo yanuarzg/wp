@@ -97,6 +97,7 @@
     .reveal{opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease}.reveal.is-visible{opacity:1;transform:none}
     @media (max-width:1024px){.hero-grid,.split,.faq{grid-template-columns:1fr}.mockup-wrap{max-width:680px;margin:auto}.feature-grid,.pricing-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.workflow{grid-template-columns:repeat(2,minmax(0,1fr))}.section-head{display:block}.section-desc{margin-top:14px}.nav-menu{display:none}.mobile-toggle{display:grid}.nav-menu.is-open{position:absolute;left:18px;right:18px;top:74px;display:grid;background:#fff;border:1px solid var(--np-border);border-radius:22px;padding:14px;box-shadow:var(--np-shadow-soft)}}
     @media (max-width:720px){.container{width:min(calc(100% - 28px),var(--np-container))}.hero{padding:50px 0}.section{padding:58px 0}.hero-proof,.feature-grid,.pricing-grid,.workflow,.dark-grid{grid-template-columns:1fr}.hero-actions,.cta-actions{display:grid}.btn{width:100%}.demo-content{grid-template-columns:1fr}.hero-card-demo h3{font-size:23px}.floating{display:none}.price-card.popular{transform:none}.footer-inner{display:grid;text-align:center;justify-content:center}.footer-links{justify-content:center;flex-wrap:wrap}.nav-cta .btn-soft{display:none}.cta-box{padding:28px;border-radius:26px}}
+    .dn {display:none!important;}
   </style>
 </head>
 <body>
@@ -104,7 +105,7 @@
   <header class="nav">
     <div class="container nav-inner">
       <a class="brand" href="#top" aria-label="NewsPress">
-        <span class="brand-mark" aria-hidden="true">
+        <span class="brand-mark dn" aria-hidden="true">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5 5.5h14v13H5z" stroke="white" stroke-width="2"/><path d="M8 9h8M8 12h8M8 15h5" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
         </span>
         <span><small>YzTheme</small>NewsPress</span>
@@ -129,9 +130,10 @@
         <div>
           <!-- <span class="eyebrow"><i></i> Theme WordPress Portal Berita Premium</span> -->
           <h1>Bangun Website Berita Profesional Tanpa Coding dari Nol.</h1>
-          <p class="hero-lead">NewsPress adalah theme WordPress premium untuk media online, portal berita, blog editorial, dan publisher konten SEO. Lengkap dengan homepage builder, breaking news, trending topic, dark mode, demo import, lisensi domain, dan auto update.</p>
+          <p class="hero-lead">NewsPress adalah theme WordPress premium untuk media online, portal berita, blog editorial, dan publisher konten SEO. 
+            Lengkap dengan breaking news, trending topic, multi section berita, views &amp; share counter, multi slot iklan dan backup-restore json.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="https://newspress.page.gd" target="_blank" rel="noopener">Demo</a>
+            <a class="btn btn-primary" href="https://newspress.page.gd" target="_blank" rel="noopener">Lihat Demo</a>
             <a class="btn btn-soft" href="#fitur">Lihat Fitur</a>
           </div>
           <div class="hero-proof">
@@ -165,7 +167,7 @@
     <section class="section" id="fitur">
       <div class="container">
         <div class="section-head reveal">
-          <div><div class="section-kicker">Fitur Unggulan</div><h2>Satu theme untuk kebutuhan utama website berita.</h2></div>
+          <div><div class="section-kicker">Fitur Unggulan</div><h2>Satu Theme untuk Semua Kebutuhan Website Berita.</h2></div>
           <p class="section-desc">NewsPress membawa fitur editorial yang biasanya butuh banyak plugin menjadi satu paket theme yang rapi, ringan, dan mudah diatur.</p>
         </div>
         <div class="feature-grid">
@@ -186,7 +188,7 @@
       <div class="container split">
         <div class="reveal">
           <div class="section-kicker">Mulai Lebih Cepat</div>
-          <h2>Import demo, ganti branding, lalu mulai publish.</h2>
+          <h2>Import Demo, Ganti Branding, Mulai Publish!</h2>
           <p class="section-desc" style="margin-top:18px">NewsPress cocok untuk website baru yang ingin langsung terlihat seperti portal berita profesional. Gunakan default-import.json untuk membangun struktur awal, lalu edit konten sesuai kebutuhan.</p>
           <ul class="check-list">
             <li><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Import demo posts, categories, menus, widgets, dan Customizer.</li>
@@ -208,8 +210,8 @@
     <section class="section showcase" id="lisensi">
       <div class="container">
         <div class="section-head reveal">
-          <div><div class="section-kicker">Distribusi Terkontrol</div><h2>Lisensi domain dan auto update dari dashboard WordPress.</h2></div>
-          <p class="section-desc">NewsPress dirancang agar distribusi theme lebih rapi: pembeli mendapat license key, fitur premium aktif berdasarkan domain, dan update theme bisa dikirim melalui GitHub.</p>
+          <div><div class="section-kicker">Distribusi Terkontrol</div><h2>Lisensi Website dan Auto Update.</h2></div>
+          <p class="section-desc">NewsPress dirancang agar distribusi theme lebih rapi: pembeli mendapat license key berdasarkan website, fitur premium aktif, update theme bisa otomatis, dan Theme bisa dipakai selamanya!.</p>
         </div>
         <div class="dark-grid">
           <div class="dark-card reveal"><h3>Local Crypto License</h3><p>Validasi domain berbasis license key lokal, admin notice, grace period 24 jam, dan kunci fitur premium jika lisensi belum aktif.</p><div class="meta-row"><span class="pill">Domain License</span><span class="pill">Grace Period</span><span class="pill">Premium Lock</span></div></div>
