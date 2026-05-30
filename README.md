@@ -1,2 +1,1 @@
-# wp
-wordpress repo
+# yztheme

@@ -1,0 +1,14 @@
+{
+  "theme": "newspress",
+  "version": "1.4.9",
+  "requires": "6.0",
+  "tested": "6.8",
+  "requires_php": "7.4",
+  "last_updated": "2026-05-29 00:00:00",
+  "details_url": "https://github.com/yanuarzg/yztheme/tree/main/newspress",
+  "download_url": "https://raw.githubusercontent.com/yanuarzg/yztheme/main/newspress/newspress-1.4.9.zip",
+  "sections": {
+    "description": "NewsPress theme update from YzTheme.",
+    "changelog": "<h4>1.4.9</h4><ul><li>First Publick Release</li></ul>"
+  }
+}
