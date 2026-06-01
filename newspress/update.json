@@ -1,14 +1,1 @@
-{
-  "theme": "newspress",
-  "version": "1.5.9",
-  "requires": "6.0",
-  "tested": "6.8",
-  "requires_php": "7.4",
-  "last_updated": "2026-05-30 00:00:00",
-  "details_url": "theme-install.php?tab=theme-information&theme=newspress&TB_iframe=true&width=772&height=918",
-  "download_url": "https://raw.githubusercontent.com/yanuarzg/wp/main/newspress/newspress-1.5.9.zip",
-  "sections": {
-    "description": "NewsPress theme update from YzTheme.",
-    "changelog": "<h3>1.5.9</h3><ul><li>Added encrypted JSON annual license support.</li><li>Added encrypted JSON lifetime license support with wildcard subdomains.</li><li>Legacy encrypted-domain licenses remain supported.</li><li>License page now shows type, mode, issue date, expiry date, remaining days, and wildcard scope.</li></ul>"
-  }
-}
+{"theme":"newspress","version":"1.6.2","requires":"6.0","tested":"6.8","requires_php":"7.4","last_updated":"2026-06-01 00:00:00","details_url":"theme-install.php?tab=theme-information&theme=newspress&TB_iframe=true&width=772&height=918","download_url":"https://raw.githubusercontent.com/yanuarzg/wp/main/newspress/newspress-1.6.2.zip","sections":{"description":"NewsPress theme update from YzTheme.","changelog":"<h3>1.6.2</h3><ul><li>Fixed license activation issue where the domain matcher helper was unavailable.</li><li>Valid decrypted JSON annual/lifetime license keys now correctly activate when product, domain, and expiration data match.</li><li>Improved license diagnostic accuracy.</li></ul>"}}
