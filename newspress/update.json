@@ -1,1 +1,16 @@
-{"theme":"newspress","version":"1.6.2","requires":"6.0","tested":"6.8","requires_php":"7.4","last_updated":"2026-06-01 00:00:00","details_url":"theme-install.php?tab=theme-information&theme=newspress&TB_iframe=true&width=772&height=918","download_url":"https://raw.githubusercontent.com/yanuarzg/wp/main/newspress/newspress-1.6.2.zip","sections":{"description":"NewsPress theme update from YzTheme.","changelog":"<h3>1.6.2</h3><ul><li>Fixed license activation issue where the domain matcher helper was unavailable.</li><li>Valid decrypted JSON annual/lifetime license keys now correctly activate when product, domain, and expiration data match.</li><li>Improved license diagnostic accuracy.</li></ul>"}}
+{
+  "theme": "newspress",
+  "version": "1.6.3",
+  "download_url": "https://raw.githubusercontent.com/yanuarzg/wp/main/newspress/newspress-1.6.3.zip",
+  "details_url": "https://github.com/yanuarzg/wp/tree/main/newspress",
+  "requires": "6.0",
+  "tested": "6.5",
+  "requires_php": "8.0",
+  "last_updated": "2026-06-15",
+  "sections": {
+    "description": "<p><strong>NewsPress</strong> adalah theme WordPress portal berita ringan untuk layout headline, breaking news, homepage builder, slot iklan, share buttons, breadcrumbs, related posts, table of contents otomatis, SEO fallback, Open Graph/Twitter Card, JSON-LD Article/NewsArticle, dark mode, demo import, dan optimasi performa frontend.</p>",
+    "changelog": "<h3>Version 1.6.3</h3><ul><li>Maintenance release untuk paket NewsPress terbaru.</li><li>Mempertahankan kompatibilitas license validation, demo import, homepage builder, SEO panel, dan performance options.</li><li>Package update disiapkan untuk distribusi melalui GitHub raw package URL.</li></ul>",
+    "installation": "<ol><li>Upload file newspress-1.6.3.zip ke folder GitHub <code>newspress/</code>.</li><li>Upload file <code>update.json</code> ke folder yang sama.</li><li>Pastikan URL manifest tetap <code>https://raw.githubusercontent.com/yanuarzg/wp/main/newspress/update.json</code>.</li><li>Pastikan lisensi NewsPress aktif agar auto update dapat berjalan.</li></ol>",
+    "faq": "<h4>Update tidak muncul?</h4><p>Pastikan version di update.json lebih tinggi dari version theme yang terpasang, nama file zip mengikuti format <code>newspress-1.6.3.zip</code>, dan download_url memakai host GitHub yang diizinkan.</p>"
+  }
+}
