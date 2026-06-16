@@ -10,7 +10,7 @@
     "sections": {
         "description": "<p><strong>NewsPress 1.6.4</strong> adalah update theme WordPress portal berita dengan seluruh inline SVG icon diganti menggunakan RemixIcon. Update ini tetap mempertahankan fitur utama NewsPress seperti Homepage Builder, SEO Panel, slot iklan, demo import, license validation, dan GitHub theme updater.</p>",
         "changelog": "<h3>Version 1.6.4</h3><ul><li>Semua icon SVG inline pada theme diganti menggunakan path SVG RemixIcon.</li><li>Icon helper PHP <code>newspress_svg_icon()</code> diperbarui agar seluruh icon memakai RemixIcon.</li><li>Icon dark mode dan light mode di JavaScript frontend diperbarui ke RemixIcon.</li><li>Menambahkan notice lisensi RemixIcon Apache-2.0 di folder <code>assets/vendor/remixicon/</code>.</li><li>Version theme diperbarui dari 1.6.3 ke 1.6.4.</li></ul>",
-        "installation": "<ol><li>Upload file <code>newspress-1.6.4.zip</code> ke folder GitHub <code>newspress/</code>.</li><li>Upload file <code>update.json</code> ke folder yang sama.</li><li>Pastikan URL manifest tetap <code>https://raw.githubusercontent.com/yanuarzg/wp/main/newspress/update.json</code>.</li><li>Pastikan lisensi NewsPress aktif agar auto update dapat berjalan.</li></ol>",
-        "faq": "<h4>Update tidak muncul?</h4><p>Pastikan version di update.json lebih tinggi dari versi theme yang terpasang, nama file package adalah <code>newspress-1.6.4.zip</code>, dan download_url memakai host GitHub yang diizinkan oleh updater.</p>"
+        "installation": "<ol><li>Pastikan lisensi NewsPress aktif agar auto update dapat berjalan.</li></ol>",
+        "faq": "<h4>Update tidak muncul?</h4><p>Pastikan lisensi valid.</p>"
     }
 }
