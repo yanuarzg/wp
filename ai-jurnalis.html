@@ -1233,7 +1233,7 @@
         <a class="rounded-xl px-3 py-2 text-sm font-semibold text-slate-600 hover:bg-slate-100" href="#autopilot">AutoPilot</a>
         <a class="rounded-xl px-3 py-2 text-sm font-semibold text-slate-600 hover:bg-slate-100" href="#demo">Demo</a>
         <a class="rounded-xl px-3 py-2 text-sm font-semibold text-slate-600 hover:bg-slate-100" href="#faq">Rincian</a>
-        <button id="themeToggle" class="ml-2 rounded-xl border border-slate-200 px-3 py-2 text-sm font-bold hover:bg-slate-100" type="button">Mode Gelap</button>
+        <button id="themeToggle" class="ml-2 rounded-xl border border-slate-200 px-3 py-2 text-sm font-bold hover:bg-slate-100 hidden" type="button">Mode Gelap</button>
       </div>
     </nav>
     <div id="mobileMenu" class="hidden border-t border-slate-200 bg-white/95 px-4 py-3 lg:hidden">
@@ -1264,7 +1264,7 @@
           <a href="#fitur" class="inline-flex items-center justify-center gap-2 rounded-2xl bg-slate-950 px-6 py-4 text-sm font-black text-white shadow-soft hover:opacity-90">
             Jelajahi Fitur <svg class="h-4 w-4"><use href="#i-chevron"></use></svg>
           </a>
-          <a href="#demo" class="inline-flex items-center justify-center gap-2 rounded-2xl border border-slate-200 bg-white px-6 py-4 text-sm font-black text-slate-900 hover:bg-slate-50">
+          <a href="#demo" class="inline-flex items-center justify-center gap-2 rounded-2xl border border-slate-200 bg-white px-6 py-4 text-sm font-black text-slate-900 hover:bg-slate-50 hidden">
             Coba Simulasi Angle <svg class="h-4 w-4"><use href="#i-spark"></use></svg>
           </a>
         </div>
@@ -1383,7 +1383,7 @@
       </div>
     </section>
 
-    <section id="demo" class="bg-white/60 py-20">
+    <section id="demo" class="bg-white/60 py-20 hidden">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="reveal mx-auto max-w-3xl text-center">
           <p class="section-kicker text-xs font-black uppercase">smart angle preview</p>
@@ -1412,10 +1412,11 @@
     <section class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
       <div class="reveal grid gap-8 lg:grid-cols-[.8fr_1.2fr] lg:items-center">
         <div>
-          <p class="section-kicker text-xs font-black uppercase">positioning</p>
-          <h2 class="mt-3 text-3xl font-black tracking-tight sm:text-5xl">Positioning produk yang jelas untuk redaksi, media, dan operator WordPress.</h2>
-          <p class="mt-5 text-slate-600">YZG AI Journalist Pro diposisikan sebagai sistem kerja redaksi berbasis AI yang menjaga fakta, mempercepat SEO, menyiapkan aset sosial media, dan memudahkan publikasi WordPress.</p>
-          <button id="copySummary" class="mt-8 rounded-2xl bg-red-500 px-6 py-4 text-sm font-black text-white shadow-soft hover:bg-red-600" type="button">Salin ringkasan produk</button>
+          <p class="section-kicker text-xs font-black uppercase">checkout</p>
+          <h2 class="mt-3 text-3xl font-black tracking-tight sm:text-5xl">Mempermudah redaksi, media, dan operator WordPress.</h2>
+          <p class="mt-5 text-slate-600">YZG AI Journalist Pro hadir sebagai sistem kerja redaksi berbasis AI yang menjaga fakta, mempercepat SEO, menyiapkan aset sosial media, dan memudahkan publikasi WordPress.</p>
+          <!-- id="copySummary" --> 
+          <a class="mt-8 rounded-2xl bg-red-500 px-6 py-4 text-sm font-black text-white shadow-soft hover:bg-red-600" type="button" href="https://yztheme.my.id/p/ai-journalist.html" target="_blank">Dapatkan Lisensi</a>
         </div>
         <div class="grid gap-4 md:grid-cols-2">
           <div class="glass rounded-3xl p-6"><svg class="mb-4 h-7 w-7 text-red-500"><use href="#i-shield"></use></svg><h3 class="text-xl font-black">Untuk redaksi</h3><p class="mt-2 text-sm leading-6 text-slate-600">Mengurangi kerja manual pada riset awal, metadata SEO, ringkasan, draft sosmed, dan naskah video.</p></div>
@@ -1425,7 +1426,7 @@
       </div>
     </section>
 
-    <section id="faq" class="bg-slate-950 py-20 text-white">
+    <section id="faq" class="bg-slate-950 py-20 text-white hidden">
       <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <div class="reveal text-center">
           <p class="text-xs font-black uppercase tracking-[.22em] text-red-300">Rincian Produk</p>
@@ -1439,7 +1440,7 @@
   <footer class="border-t border-slate-200 bg-white py-10">
     <div class="mx-auto flex max-w-7xl flex-col gap-4 px-4 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
       <div><strong class="block">YZG AI Journalist Pro v5</strong><span class="text-sm text-slate-500">AI editorial assistant untuk artikel, SEO, audit fakta, aset sosial media, dan Draft WordPress.</span></div>
-      <a href="#home" class="inline-flex items-center gap-2 rounded-2xl border border-slate-200 px-5 py-3 text-sm font-black hover:bg-slate-50">Kembali ke atas <svg class="h-4 w-4 rotate-180"><use href="#i-chevron"></use></svg></a>
+      <a href="#home" class="inline-flex items-center gap-2 rounded-2xl border border-slate-200 px-5 py-3 text-sm font-black hover:bg-slate-50 hidden">Kembali ke atas <svg class="h-4 w-4 rotate-180"><use href="#i-chevron"></use></svg></a>
     </div>
   </footer>
 </div>
